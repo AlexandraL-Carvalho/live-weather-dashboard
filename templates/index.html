@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Weather Dashboard</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #8cace7, #ffffff);
+            color: #333;
+        }
+        header {
+            background-color: #2C3E50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.2rem;
+            margin: 5px 0 0;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 30px auto;
+            max-width: 900px;
+        }
+        .map {
+            margin-top: 20px;
+            width: 100%;
+            max-width: 600px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .map img {
+            width: 100%;
+            display: block;
+            border-radius: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+            background-color: #2C3E50;
+            color: white;
+            border-radius: 0 0 10px 10px;
+        }
+        footer a {
+            color: #FFD700;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Live Weather Dashboard</h1>
+        <p>Visualize o clima em tempo real no Brasil</p>
+    </header>
+
+    <div class="container">
+        <div class="map">
+            <!-- Mapa do Brasil -->
+            <img src="{{ url_for('static', filename='mapa-brasil-5.png') }}" alt="Mapa do Brasil">
+        </div>
+    </div>
+
+    <footer>
+        <p>Powered by <a href="https://openweathermap.org/" target="_blank">OpenWeather</a></p>
+    </footer>
+</body>
+
+</html>
+
+
