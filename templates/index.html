@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 
 <head>
     <meta charset="UTF-8">
@@ -47,6 +47,22 @@
             display: block;
             border-radius: 10px;
         }
+        .button-container {
+            margin-top: 20px;
+        }
+        .button-container button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            background-color: #2C3E50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .button-container button:hover {
+            background-color: #1A242F;
+        }
         footer {
             text-align: center;
             padding: 10px;
@@ -73,13 +89,17 @@
             <!-- Mapa do Brasil -->
             <img src="{{ url_for('static', filename='mapa-brasil-5.png') }}" alt="Mapa do Brasil">
         </div>
+        <div class="button-container">
+            <button onclick="location.href='/start'">Start</button>
+        </div>
     </div>
 
     <footer>
-        <p>Powered by <a href="https://openweathermap.org/" target="_blank">OpenWeather</a></p>
+    
     </footer>
 </body>
 
 </html>
+
 
 
