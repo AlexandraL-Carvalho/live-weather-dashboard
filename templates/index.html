@@ -12,20 +12,24 @@
             background: linear-gradient(to bottom, #8cace7, #ffffff);
             color: #333;
         }
+
         header {
             background-color: #2C3E50;
             color: white;
             padding: 20px;
             text-align: center;
         }
+
         header h1 {
             font-size: 3rem;
             margin: 0;
         }
+
         header p {
             font-size: 1.2rem;
             margin: 5px 0 0;
         }
+
         .container {
             display: flex;
             flex-direction: column;
@@ -34,6 +38,7 @@
             margin: 30px auto;
             max-width: 900px;
         }
+
         .map {
             margin-top: 20px;
             width: 100%;
@@ -42,15 +47,17 @@
             border-radius: 10px;
             overflow: hidden;
         }
+
         .map img {
             width: 100%;
             display: block;
             border-radius: 10px;
         }
+
         .button-container {
             margin-top: 25px;
-            margin-right: 1000px;
         }
+
         .button-container button {
             padding: 10px 20px;
             font-size: 1rem;
@@ -61,9 +68,11 @@
             cursor: pointer;
             transition: background-color 0.3s ease;
         }
+
         .button-container button:hover {
             background-color: #1A242F;
         }
+
         footer {
             text-align: center;
             padding: 10px;
@@ -72,6 +81,7 @@
             color: white;
             border-radius: 0 0 10px 10px;
         }
+
         footer a {
             color: #FFD700;
             text-decoration: none;
@@ -93,17 +103,11 @@
             <!-- Mapa do Brasil -->
             <img src="{{ url_for('static', filename='mapa-brasil-5.png') }}" alt="Mapa do Brasil">
         </div>
-        <div class="button-container">
-            <button onclick="location.href='/start'">Start</button>
-        </div>
     </div>
 
     <footer>
-    
+        
     </footer>
 </body>
 
 </html>
-
-
-
